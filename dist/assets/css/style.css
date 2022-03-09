@@ -356,10 +356,220 @@ template {
     display: none;
 }
 
-.header__container {
-    max-width: 1180px;
+.header__top {
+    border-bottom: 1px solid #EBEBF1;
+}
+
+.header__top-inner {
+    max-width: 1240px;
     margin: auto;
-    padding: 0 5px;
+    padding: 15px 5px 18px;
+}
+
+.header__top-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1060px) {
+    .header__top-wrap {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 15px;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.header__top-main {
+    max-width: 1040px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 965px) {
+    .header__top-main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 15px;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.header__logo {
+    width: 135px;
+    height: 30px;
+}
+
+.header__search {
+    max-width: 660px;
+    width: 100%;
+    height: 40px;
+    padding: 9px 20px 9px 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    border: transparent;
+    border-radius: 5px;
+    background: #FAFAFA;
+}
+
+.header__search:hover {
+    outline: 1px solid #121920;
+    /*Firefox 19+*/
+    /*Firefox 18-*/
+}
+
+.header__search:hover ::-webkit-input-placeholder {
+    color: #121920;
+}
+
+.header__search:hover ::-moz-placeholder {
+    color: #121920;
+}
+
+.header__search:hover :-moz-placeholder {
+    color: #121920;
+}
+
+.header__search:hover :-ms-input-placeholder {
+    color: #121920;
+}
+
+.header__search:hover #search-icon {
+    fill: #121920;
+}
+
+.header__search:hover #header-input {
+    color: #121920;
+}
+
+.header__input {
+    padding-right: 10px;
+    outline: none;
+    border: none;
+    max-width: 600px;
+    width: 100%;
+    background: #FAFAFA;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #BBC4D6;
+}
+
+.header__input:hover {
+    color: #121920;
+}
+
+.header__submit {
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    background: url(../../assets/images/search.svg);
+    cursor: pointer;
+}
+
+.header__contact {
+    width: 143px;
+    height: 51px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: #BBC4D6;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.header__contact:hover #header-call {
+    display: none;
+    transition: 0.5s;
+}
+
+.header__contact:hover #header-work {
+    display: block;
+    transition: 0.5s;
+}
+
+.header__contact:hover #header-phone {
+    color: #34AADD;
+}
+
+.header__phone {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: #121920;
+    text-decoration: none;
+}
+
+.header__work {
+    display: none;
+}
+
+.header__top-btn {
+    width: 100px;
+    height: 40px;
+    background: #34AADD;
+    border: transparent;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__top-btn:hover {
+    background: #6680AE;
+}
+
+.header__top-btn:active {
+    background: #BBC4D6;
+}
+
+.header__top-btn:disabled {
+    background: #EBEBF1;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
 }
 
 .footer__top {

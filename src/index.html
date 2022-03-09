@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.min.css">
-    <link rel="icon" href="./assets/images/favicon.png"/>
+    <link rel="icon" href="./assets/images/favicon.png" />
     <title>Test task Middle</title>
 </head>
 
@@ -17,12 +17,67 @@
 
     <header class="header">
 
-        <div class="header__search-wrap">
-            <form class="search header__search" action="">
-                <input class="header__submit" type="submit" value="">
-                <input class="header__input" type="search" placeholder="Найти...">
-            </form>
+        <div class="header__top">
+
+            <div class="header__top-inner">
+
+                <div class="header__top-wrap">
+
+                    <div class="header__top-main">
+
+                        <a class="header__logo-link" href="https://qsoft.ru" target="_blanck" title="Click me">
+                            <img class="header__logo" src="./assets/images/logo@4x.png" alt="Логотип компании QSOFT">
+                        </a>
+
+                        <form class="header__search" action="">
+                            <input id="header-input" class="header__input" type="search" placeholder="Найти на сайте...">
+                            <button class="header__submit" type="submit" value="Submit">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="search-icon" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5ZM10.5691 11.5691C9.45527 12.4643 8.0402 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 8.18955 12.3554 9.72854 11.2987 10.8844L15.3536 14.9393C15.5488 15.1346 15.5488 15.4512 15.3536 15.6464C15.1583 15.8417 14.8417 15.8417 14.6464 15.6464L10.5691 11.5691Z"
+                                        fill="#BBC4D6" />
+                                </svg>
+                            </button>
+                        </form>
+
+                        <div class="header__contact" title="Click and call us">
+                            <a id="header-phone" class="header__phone" href="tel:+79996660013">8 (999) 666-00-13</a>
+                            <span id="header-call" class="header__call">Звоните с 8 до 23!</span>
+                            <span id="header-work" class="header__work">Работаем с 8 до 23</span>
+                        </div>
+
+                    </div>
+
+                    <button class="header__top-btn" type="button" title="Click me">Войти</button>
+
+                </div>
+
+            </div>
+
         </div>
+
+        <nav class="header__nav">
+            <ul class="header__list">
+                <a class="header__link" href="#">
+                    <li class="header__list" style="color: #F95A59">Акции</li>
+                </a>
+                <a class="header__link" href="#">
+                    <li class="header__list"></li>Товары
+                </a>
+                <a class="header__link" href="#">
+                    <li class="header__list"></li>Доставка и оплата
+                </a>
+                <a class="header__link" href="#">
+                    <li class="header__list">Гарантия</li>
+                </a>
+                <a class="header__link" href="#">
+                    <li class="header__list"></li>О нас
+                </a>
+                <a class="header__link" href="#">
+                    <li class="header__list"></li>Контакты
+                </a>
+            </ul>
+        </nav>
 
     </header>
 
