@@ -356,13 +356,42 @@ template {
     display: none;
 }
 
+.header__top-inner, .header__nav {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.header__input, .header__contact {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.header__phone, .header__link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.header__top-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.header {
+    box-shadow: 0px 0px 10px 0px #A4A4A408;
+    box-shadow: -3px 0px 40px 0px #0000001A;
+}
+
 .header__top {
     border-bottom: 1px solid #EBEBF1;
 }
 
 .header__top-inner {
-    max-width: 1240px;
-    margin: auto;
     padding: 15px 5px 18px;
 }
 
@@ -433,8 +462,8 @@ template {
 
 .header__search:hover {
     outline: 1px solid #121920;
-    /*Firefox 19+*/
-    /*Firefox 18-*/
+      /*Firefox 19+*/
+      /*Firefox 18-*/
 }
 
 .header__search:hover ::-webkit-input-placeholder {
@@ -468,9 +497,6 @@ template {
     max-width: 600px;
     width: 100%;
     background: #FAFAFA;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 22px;
     color: #BBC4D6;
 }
 
@@ -490,11 +516,6 @@ template {
 .header__contact {
     width: 143px;
     height: 51px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 160%;
     color: #BBC4D6;
     cursor: pointer;
     display: -ms-flexbox;
@@ -519,11 +540,6 @@ template {
 }
 
 .header__phone {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 160%;
     color: #121920;
     text-decoration: none;
 }
@@ -538,11 +554,6 @@ template {
     background: #34AADD;
     border: transparent;
     border-radius: 5px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
     color: #FFFFFF;
     cursor: pointer;
     display: -ms-flexbox;
@@ -563,6 +574,49 @@ template {
 
 .header__top-btn:disabled {
     background: #EBEBF1;
+}
+
+.header__nav {
+    padding: 0 5px;
+}
+
+.header__list {
+    max-width: 786px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 60px;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 795px) {
+    .header__list {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.header__link {
+    text-decoration: none;
+    color: #768298;
+}
+
+.header__link:hover {
+    color: #34AADD;
+}
+
+.header__link:active {
+    opacity: 0.5;
 }
 
 input::-webkit-search-decoration,
