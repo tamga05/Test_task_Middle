@@ -3,6 +3,13 @@
     margin: auto;
 }
 
+%text400-14-20 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 %text400-14-22 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -24,9 +31,32 @@
     line-height: 14px;
 }
 
+%text500-18-25 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #121920;
+}
+
 %text500-36-58 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 58px;
+}
+
+%text700-16-22 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+%cardPromo {
+    height: 28px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

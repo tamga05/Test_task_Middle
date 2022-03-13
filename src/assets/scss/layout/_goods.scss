@@ -12,11 +12,138 @@
         margin-bottom: 50px;
     }
 
-    &__carts {
+    &__cards {
         display: grid;
         grid-template-columns: repeat(4, 270px);
         column-gap: 30px;
     }
+
+    &__card {
+
+    }
+
+    &__card-top {
+        background-image: url(../images/flower.png);
+        width: 100%;
+        height: 174px;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        //background-size: cover;
+        padding: 10px;
+    }
+
+    &__card-promo {
+        @extend %text400-14-22;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    &__card-action {
+        @extend %cardPromo;
+        width: 61px;
+        background: #FAC300;
+    }
+
+    &__card-hit {
+        @extend %cardPromo;
+        width: 44px;
+        background: #DC2C53;
+    }
+
+    &__card-price {
+        @extend %cardPromo;
+        width: 106px;
+        background: #A7507B;
+    }
+
+    &__card-bottom {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    &__card-subtitle {
+        @extend %text500-18-25;
+        margin-bottom: 5px;
+
+        &:hover {
+            color: #34AADD;
+            cursor: pointer;
+        }
+    }
+
+    &__card-text {
+        @extend %text400-14-22;
+        color: #768298;
+        margin-bottom: 14px;
+    }
+
+    &__buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__buy-price {
+        width: 48px;
+        height: 43px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__buy-past-ptice {
+        @extend %text400-14-20;
+        color: #768298;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 52px;
+            height: 2px;
+            background: #F95A59;
+            transform: rotate(24deg);
+            top: 9px;
+            left: -2px;
+        }
+    }
+
+    &__buy-real-price {
+        @extend %text700-16-22;
+        color: #121920;
+    }
+
+    &__buy-cart {
+        width: 50px;
+        height: 50px;
+        border-radius: 6px;
+        background: #34AADD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: #6680AE;
+            cursor: pointer;
+            box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.05), 2px 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        &:active {
+            background: #BBC4D6;
+        }
+
+        &:disabled {
+            background: #EBEBF1;
+        }
+    }
+
+
+
+
+
 
     &__btn {
         width: 205px;
