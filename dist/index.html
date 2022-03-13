@@ -30,9 +30,11 @@
                         </a>
 
                         <form class="header__search" action="">
-                            <input id="header-input" class="header__input" type="search" placeholder="Найти на сайте...">
+                            <input id="header-input" class="header__input" type="search"
+                                placeholder="Найти на сайте...">
                             <button class="header__submit" type="submit" value="Submit">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path id="search-icon" fill-rule="evenodd" clip-rule="evenodd"
                                         d="M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5ZM10.5691 11.5691C9.45527 12.4643 8.0402 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 8.18955 12.3554 9.72854 11.2987 10.8844L15.3536 14.9393C15.5488 15.1346 15.5488 15.4512 15.3536 15.6464C15.1583 15.8417 14.8417 15.8417 14.6464 15.6464L10.5691 11.5691Z"
                                         fill="#BBC4D6" />
@@ -48,7 +50,7 @@
 
                     </div>
 
-                    <button class="header__top-btn" type="button" title="Click me">Войти</button>
+                    <button class="blue-btn header__top-btn" type="button" title="Click me">Войти</button>
 
                 </div>
 
@@ -81,7 +83,28 @@
 
     </header>
 
-    <section class="goods"></section>
+    <section class="goods">
+
+        <div class="goods__container">
+            <h1 class="goods__title">Популярные товары</h1>
+
+            <div class="goods__carts">
+                <div class="goods__cart"></div>
+                <div class="goods__cart"></div>
+                <div class="goods__cart"></div>
+                <div class="goods__cart"></div>
+            </div>
+
+            <button class="transparent-btn goods__btn" type="button" title="Click me">Смотреть каталог
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow-right" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.76365 0.36361C7.41218 0.715082 7.41218 1.28493 7.76365 1.6364L12.2273 6.10001H0.900049C0.402993 6.10001 4.95911e-05 6.50295 4.95911e-05 7.00001C4.95911e-05 7.49706 0.402993 7.90001 0.900049 7.90001H12.2273L7.76365 12.3636C7.41218 12.7151 7.41218 13.2849 7.76365 13.6364C8.11512 13.9879 8.68497 13.9879 9.03644 13.6364L15.0364 7.6364C15.3879 7.28493 15.3879 6.71508 15.0364 6.36361L9.03644 0.36361C8.68497 0.0121381 8.11512 0.0121381 7.76365 0.36361Z"
+                        fill="#34AADD" />
+                </svg>
+            </button>
+        </div>
+
+    </section>
 
     <section class="news"></section>
 

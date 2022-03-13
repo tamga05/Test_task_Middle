@@ -94,7 +94,7 @@
         height: 16px;
         border: none;
         outline: none;
-        background: url(../../assets/images/search.svg);
+        background: url(./../assets/images/search.svg);
         cursor: pointer;
     }
 
@@ -110,12 +110,10 @@
 
         &:hover #header-call {
             display: none;
-            transition: 0.5s;
         }
 
         &:hover #header-work {
             display: block;
-            transition: 0.5s;
         }
 
         &:hover #header-phone {
@@ -189,6 +187,7 @@
 
         &:hover {
             color: #34AADD;
+            transform: translateY(-3px);
         }
 
         &:active {

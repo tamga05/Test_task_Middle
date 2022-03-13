@@ -356,8 +356,8 @@ template {
     display: none;
 }
 
-.header__top-inner, .header__nav {
-    max-width: 1240px;
+.header__top-inner, .header__nav, .goods__container {
+    max-width: 1180px;
     margin: auto;
 }
 
@@ -375,11 +375,18 @@ template {
     line-height: 29px;
 }
 
-.header__top-btn {
+.header__top-btn, .goods__btn {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
+}
+
+.goods__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 58px;
 }
 
 .header {
@@ -509,7 +516,7 @@ template {
     height: 16px;
     border: none;
     outline: none;
-    background: url(../../assets/images/search.svg);
+    background: url(./../assets/images/search.svg);
     cursor: pointer;
 }
 
@@ -527,12 +534,10 @@ template {
 
 .header__contact:hover #header-call {
     display: none;
-    transition: 0.5s;
 }
 
 .header__contact:hover #header-work {
     display: block;
-    transition: 0.5s;
 }
 
 .header__contact:hover #header-phone {
@@ -613,6 +618,8 @@ template {
 
 .header__link:hover {
     color: #34AADD;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .header__link:active {
@@ -624,6 +631,68 @@ input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {
     display: none;
+}
+
+.goods__container {
+    padding: 90px 5px;
+}
+
+.goods__title {
+    color: #121920;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.goods__carts {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.goods__btn {
+    width: 205px;
+    height: 50px;
+    padding-left: 30px;
+    border: 1px solid #34AADD;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+    margin-top: 30px;
+    color: #34AADD;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.goods__btn:hover {
+    border-color: #6680AE;
+    color: #6680AE;
+}
+
+.goods__btn:hover #arrow-right {
+    fill: #6680AE;
+}
+
+.goods__btn:active {
+    border-color: #BBC4D6;
+    color: #BBC4D6;
+}
+
+.goods__btn:active #arrow-right {
+    fill: #BBC4D6;
+}
+
+.goods__btn:disabled {
+    border-color: #EBEBF1;
+    color: #EBEBF1;
+}
+
+.goods__btn:disabled #arrow-right {
+    fill: #EBEBF1;
 }
 
 .footer__top {
