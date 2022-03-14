@@ -3,6 +3,10 @@
     &__container {
         @extend %mainContainer;
         padding: 90px 5px;
+
+        @media screen and (max-width: 1185px) {
+            padding: 50px 5px;
+        }
     }
 
     &__title {
@@ -10,25 +14,33 @@
         color: #121920;
         text-transform: uppercase;
         margin-bottom: 50px;
+
+        @media screen and (max-width: 1185px) {
+            text-align: center;
+        }
     }
 
     &__cards {
         display: grid;
         grid-template-columns: repeat(4, 270px);
         column-gap: 30px;
-    }
 
-    &__card {
+        @media screen and (max-width: 1185px) {
+            grid-template-columns: repeat(2, 270px);
+            justify-content: center;
+            gap: 30px;
+        }
 
+        @media screen and (max-width:580px) {
+            grid-template-columns: 270px;
+            gap: 20px;
+        }
     }
 
     &__card-top {
         background-image: url(../images/flower.png);
         width: 100%;
         height: 174px;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        //background-size: cover;
         padding: 10px;
     }
 
@@ -60,8 +72,16 @@
 
     &__card-bottom {
         width: 100%;
-        height: auto;
+        height: 198px;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
     }
 
     &__card-subtitle {
@@ -77,7 +97,6 @@
     &__card-text {
         @extend %text400-14-22;
         color: #768298;
-        margin-bottom: 14px;
     }
 
     &__buy {
@@ -114,6 +133,7 @@
     &__buy-real-price {
         @extend %text700-16-22;
         color: #121920;
+        width: 70px;
     }
 
     &__buy-cart {
@@ -140,10 +160,30 @@
         }
     }
 
+    &__card-top-2 {
+        background-image: url(../images/bloger.png);
+        width: 100%;
+        height: 174px;
+        padding: 10px;
+    }
 
+    &__buy-price-2 {
+        align-self: flex-end;
+    }
 
+    &__card-top-3 {
+        background-image: url(../images/lamp.png);
+        width: 100%;
+        height: 174px;
+        padding: 10px;
+    }
 
-
+    &__card-top-4 {
+        background-image: url(../images/clock.png);
+        width: 100%;
+        height: 174px;
+        padding: 10px;
+    }
 
     &__btn {
         width: 205px;
@@ -159,6 +199,11 @@
         display: flex;
         align-items: center;
         gap: 10px;
+
+        @media screen and (max-width: 1185px) {
+            margin: auto;
+            margin-top: 50px;
+        }
 
         &:hover {
             border-color: #6680AE;
