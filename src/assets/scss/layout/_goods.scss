@@ -11,8 +11,6 @@
 
     &__title {
         @extend %text500-36-58;
-        color: #121920;
-        text-transform: uppercase;
         margin-bottom: 50px;
 
         @media screen and (max-width: 1185px) {
@@ -186,19 +184,8 @@
     }
 
     &__btn {
+        @extend %transparentButton;
         width: 205px;
-        height: 50px;
-        padding-left: 30px;
-        border: 1px solid #34AADD;
-        border-radius: 5px;
-        background: #FFFFFF;
-        cursor: pointer;
-        margin-top: 30px;
-        @extend %text500-14-14;
-        color: #34AADD;
-        display: flex;
-        align-items: center;
-        gap: 10px;
 
         @media screen and (max-width: 1185px) {
             margin: auto;
