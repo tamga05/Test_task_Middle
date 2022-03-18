@@ -389,7 +389,7 @@ template {
     line-height: 29px;
 }
 
-.goods__btn, .news__btn, .header__top-btn {
+.goods__btn, .news__btn, .header__top-btn, .footer__list, .footer__btn {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -965,6 +965,7 @@ input::-webkit-search-results-decoration {
 
 .news__btn {
     width: 234px;
+    background: #F0F0F0;
 }
 
 @media screen and (max-width: 1185px) {
@@ -1288,7 +1289,109 @@ input::-webkit-search-results-decoration {
     padding: 30px 5px;
 }
 
-.footer__logo {
-    width: 135px;
-    height: 26px;
+.footer__container-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__left-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__logo-link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__logo-link:hover .logo {
+    fill: #768298;
+}
+
+.footer__icon-wrap {
+    width: 165px;
+    height: 40px;
+    border-left: 1px solid #BBC4D6;
+    border-right: 1px solid #BBC4D6;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer__youtube-link:hover #youtube {
+    fill: #768298;
+}
+
+.footer__instagram-link:hover #instagram {
+    fill: #768298;
+}
+
+.footer__list {
+    max-width: 407px;
+    list-style-type: none;
+    color: #34AADD;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #34AADD;
+}
+
+.footer__link:active {
+    opacity: 0.5;
+}
+
+.footer__btn {
+    width: 199px;
+    height: 50px;
+    background: #34AADD;
+    border: transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__btn:hover {
+    background: #6680AE;
+}
+
+.footer__btn:active {
+    background: #BBC4D6;
+}
+
+.footer__btn:disabled {
+    background: #EBEBF1;
 }

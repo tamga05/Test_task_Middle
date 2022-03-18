@@ -15,44 +15,6 @@
         }
     }
 
-    &__btn {
-        @extend %transparentButton;
-        width: 234px;
-        background: #F0F0F0;
-
-        @media screen and (max-width: 1185px) {
-            margin: auto;
-            margin-top: 50px;
-        }
-
-        &:hover {
-            border-color: #6680AE;
-            color: #6680AE;
-
-            #arrow-right {
-                fill: #6680AE;
-            }
-        }
-
-        &:active {
-            border-color: #BBC4D6;
-            color: #BBC4D6;
-
-            #arrow-right {
-                fill: #BBC4D6;
-            }
-        }
-
-        &:disabled {
-            border-color: #EBEBF1;
-            color: #EBEBF1;
-
-            #arrow-right {
-                fill: #EBEBF1;
-            }
-        }
-    }
-
     &__blocks {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -287,6 +249,44 @@
         color: #FFFFFF;
         max-width: 318px;
         transition: 1.5s ease;
+    }
+
+    &__btn {
+        @extend %transparentButton;
+        width: 234px;
+        background: #F0F0F0;
+
+        @media screen and (max-width: 1185px) {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        &:hover {
+            border-color: #6680AE;
+            color: #6680AE;
+
+            #arrow-right {
+                fill: #6680AE;
+            }
+        }
+
+        &:active {
+            border-color: #BBC4D6;
+            color: #BBC4D6;
+
+            #arrow-right {
+                fill: #BBC4D6;
+            }
+        }
+
+        &:disabled {
+            border-color: #EBEBF1;
+            color: #EBEBF1;
+
+            #arrow-right {
+                fill: #EBEBF1;
+            }
+        }
     }
 }
 
